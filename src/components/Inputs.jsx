@@ -1,3 +1,5 @@
+import Btn from "./Btn"
+
 export default function Inputs() {
     return (
         <section className="input-container">
@@ -5,7 +7,7 @@ export default function Inputs() {
                 <input id="input-1" type="text" />
                 <input id="input-2" type="text" />
             </div>
-            
+            <Btn />
         </section>
     )
 }
