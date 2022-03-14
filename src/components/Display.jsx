@@ -1,7 +1,9 @@
-export default function Display() {
+export default function Display(props) {
     return (
         <section id="display-container">
-            
+            <img src="" alt="meme" />
+            <h1 className="top-meme-text">{props.topText}</h1>
+            <h1 className="bottom-meme-text">{props.bottomText}</h1>
         </section>
     )
 }
