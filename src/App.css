@@ -1,0 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  --header-color: #000000;
+  --text-color: #ffffff;
+  --button-color: #000000;
+  --text-outline-color: #000000;
+}
