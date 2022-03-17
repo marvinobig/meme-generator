@@ -16,3 +16,17 @@ When you expect data in an application to change according to user input and act
 
 4. What does "immutable" mean? Are props immutable? Is state immutable?
 Immutable is when a variable or object in javascript is not able to be changed. Props in react are immutable and state is not immutable.
+
+5. You have 2 options for what you can pass in to a
+   state setter function (e.g. `setCount`). What are they?
+You can pass in the variable you are trying to update e.g. setCount(count + 1) or you can pass in a callback function e.g. setCount(() => {code...})
+
+
+6. When would you want to pass the first option (from answer
+   above) to the state setter function?
+You use this when you already know what the previous value of state is.
+
+
+7. When would you want to pass the second option (from answer
+   above) to the state setter function?
+You use this when you don't know what the previous value of state is and need the set function to callback to the previous state and return it so it is ready to be updated.
