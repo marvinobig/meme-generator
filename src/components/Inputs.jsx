@@ -1,5 +1,3 @@
-import { Btn } from "./Btn"
-
 export default function Inputs() {
     return (
         <section id="input-container">
@@ -7,7 +5,6 @@ export default function Inputs() {
                 <input id="top-text" type="text" placeholder="Top Text"/>
                 <input id="bottom-text" type="text" placeholder="Bottom Text"/>
             </div>
-            <Btn />
         </section>
     )
 }
