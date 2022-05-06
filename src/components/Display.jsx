@@ -16,9 +16,12 @@ export default function Display(props) {
     }, [])
 
     function memeChoice() {
+        const imgDisplay = document.getElementById("display-container");
         const memeArray = MEME_DATA;
-        let randomNum = Math.floor(Math.random() * 101);
+        let randomNum = Math.floor(Math.random() * memeArray.length);
         setURL(memeArray[randomNum].url);
+
+        imgDisplay.style.backgroundImage = `url(${url})`;
     }
 
     return (
@@ -27,9 +30,9 @@ export default function Display(props) {
                 <button id="get-meme" onClick={memeChoice}>Get a new meme image <i className="material-icons">image</i></button>
             </div>
             <section id="display-container">
-                <h1>{props.input1}</h1>
-                <img src={`${url}`} alt="meme" />
-                <h1>{props.input2}</h1>
+                <h1 className="top-meme-text">{props.input1}</h1>
+                
+                <h1 className="bottom-meme-text">{props.input2}</h1>
             </section>
         </div>
         

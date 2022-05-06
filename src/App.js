@@ -10,13 +10,15 @@ export default function App() {
   return (
     <div className="App">
       <Nav />
-      <Inputs
-        setInput1={setInput1}
-        setInput2={setInput2}
-        input1={input1}
-        input2={input2}
-      />
-      <Display input1={input1} input2={input2} />
+      <main className="content">
+        <Inputs
+          setInput1={setInput1}
+          setInput2={setInput2}
+          input1={input1}
+          input2={input2}
+        />
+        <Display input1={input1} input2={input2} />
+      </main>
     </div>
   );
 }
